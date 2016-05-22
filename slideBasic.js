@@ -20,7 +20,7 @@ $(document).ready(function(){
         }
         changeImg();
     });
-    $('img').on('click', function(){
+    $('.imgList img').on('click', function(){
         currentIndex +=1;
         if (currentIndex > totImg - 1){
             currentIndex=0;
