@@ -1,0 +1,35 @@
+body{
+    text-align: center;
+}
+.imgSlider{
+    width:35%;
+    padding:1%;
+    display:inline-block;
+    margin:2% auto;
+    text-align: center;
+    border-radius:10px;
+}
+.prev{
+    margin:0 5% 0 0;
+    font-size:3em;
+}
+.next{
+    margin:0 0 0 5%;
+    font-size:3em;
+}
+.prev:hover, .next:hover{
+    cursor: pointer;
+}
+.imgList, .imgList img{
+    width:96%;
+    padding:2%;
+    list-style: none;
+}
+
+.imgList li img{
+    display:none;
+    border-radius:20px;
+}
+.activeImg{
+    display:inline-block;
+}
