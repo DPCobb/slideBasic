@@ -19,7 +19,7 @@ $(document).ready(function(){
         }
         changeImgAuto();
     }, 3000);
-    $('.next').on('click', function(){
+    $('.next, .imgList img').on('click', function(){
         currentIndex +=1;
         if (currentIndex > totImg - 1){
             currentIndex=0;
@@ -30,13 +30,6 @@ $(document).ready(function(){
         currentIndex -= 1;
         if (currentIndex < 0) {
             currentIndex = totImg - 1;
-        }
-        changeImg();
-    });
-    $('.imgList img').on('click', function(){
-        currentIndex +=1;
-        if (currentIndex > totImg - 1){
-            currentIndex=0;
         }
         changeImg();
     });
