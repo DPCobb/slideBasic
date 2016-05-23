@@ -1,6 +1,6 @@
 # slideBasic
 
-An easy and basic jQuery slider. Just place your images in a ```<ul>``` with the class ```.imgList``` and give any ```<li>``` image the ```.activeImg``` class. The ```.imgSlider``` class is optional and is just a wrapper setting some basic styles like width, padding, margin etc. 
+An easy and basic jQuery slider. Just place your images in a ```<ul>``` with the class ```.imgList``` and give any ```<li>``` image the ```.activeImg``` class. The ```.imgSlider``` class is optional and is just a wrapper setting some basic styles like width, padding, margin etc. slideBasic has a 3 second auto slide interval for the images. The auto slide of the images is stopped when a user clicks next, prev, or on the image. 
 
 ```
 <div class="imgSlider">
