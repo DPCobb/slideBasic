@@ -2,6 +2,7 @@ $(document).ready(function(){
     var current = $('.activeImg'), currentIndex = $('.imgList img').index(current), imgs = $('.imgList li').find('img'), totImg = imgs.length;
     $('.activeImg').show();
     function changeImg(){
+        clearInterval(autoPlay);
         var currentImg = imgs.eq(currentIndex);
         imgs.hide();
         currentImg.fadeIn('slow');
@@ -16,22 +17,20 @@ $(document).ready(function(){
         if (currentIndex > totImg - 1){
             currentIndex=0;
         }
-        changeImgAuto()
+        changeImgAuto();
     }, 3000);
     $('.next').on('click', function(){
         currentIndex +=1;
         if (currentIndex > totImg - 1){
             currentIndex=0;
         }
-        clearInterval(autoPlay);
-        changeImg()
+        changeImg();
     });
     $('.prev').on('click',function() {
         currentIndex -= 1;
         if (currentIndex < 0) {
             currentIndex = totImg - 1;
         }
-        clearInterval(autoPlay);
         changeImg();
     });
     $('.imgList img').on('click', function(){
@@ -39,7 +38,6 @@ $(document).ready(function(){
         if (currentIndex > totImg - 1){
             currentIndex=0;
         }
-        clearInterval(autoPlay);
-        changeImg()
+        changeImg();
     });
 });
