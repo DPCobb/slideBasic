@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    var currentIndex = 0, imgs = $('.imgList li').find('img'), totImg = imgs.length;
+    var current = $('.activeImg'), currentIndex = $('.imgList img').index(current), imgs = $('.imgList li').find('img'), totImg = imgs.length;
     $('.activeImg').show();
     function changeImg(e){
         var currentImg = imgs.eq(currentIndex);
